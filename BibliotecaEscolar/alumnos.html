@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Alumnos - Biblioteca Escolar</title>
+
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <!-- MENÚ LATERAL -->
+    <aside class="menu">
+
+        <div class="logo">
+
+            <svg class="logo-icono" viewBox="0 0 24 24">
+                <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H11v16H6.5A2.5 2.5 0 0 0 4 21.5V5.5Z"/>
+                <path d="M20 5.5A2.5 2.5 0 0 0 17.5 3H13v16h4.5a2.5 2.5 0 0 1 2.5 2.5V5.5Z"/>
+            </svg>
+
+            <h2>Biblioteca<br>Escolar</h2>
+
+        </div>
+
+
+        <nav>
+
+            <!-- INICIO -->
+            <a href="index.html">
+
+                <svg viewBox="0 0 24 24">
+                    <path d="M3 11.5 12 4l9 7.5"/>
+                    <path d="M5 10.5V20h5v-6h4v6h5v-9.5"/>
+                </svg>
+
+                Inicio
+            </a>
+
+
+            <!-- LIBROS -->
+            <a href="libros.html">
+
+                <svg viewBox="0 0 24 24">
+                    <path d="M4 5a2 2 0 0 1 2-2h5v17H6a2 2 0 0 0-2 2V5Z"/>
+                    <path d="M20 5a2 2 0 0 0-2-2h-5v17h5a2 2 0 0 1 2 2V5Z"/>
+                </svg>
+
+                Libros
+            </a>
+
+
+            <!-- PRÉSTAMOS -->
+            <a href="prestamos.html">
+
+                <svg viewBox="0 0 24 24">
+                    <path d="M4 6h11"/>
+                    <path d="M4 10h11"/>
+                    <path d="M4 14h7"/>
+                    <path d="M16 13v7"/>
+                    <path d="m13 17 3 3 3-3"/>
+                </svg>
+
+                Préstamos
+            </a>
+
+
+            <!-- DEVOLUCIONES -->
+            <a href="devoluciones.html">
+
+                <svg viewBox="0 0 24 24">
+                    <path d="M9 7 4 12l5 5"/>
+                    <path d="M4 12h10a6 6 0 0 1 6 6"/>
+                </svg>
+
+                Devoluciones
+            </a>
+
+
+            <!-- ALUMNOS -->
+            <a href="alumnos.html" class="activo">
+
+                <svg viewBox="0 0 24 24">
+                    <circle cx="12" cy="8" r="4"/>
+                    <path d="M4 21c0-4 3.5-7 8-7s8 3 8 7"/>
+                </svg>
+
+                Alumnos
+            </a>
+
+
+            <!-- INVENTARIO -->
+            <a href="inventario.html">
+
+                <svg viewBox="0 0 24 24">
+                    <rect x="4" y="4" width="16" height="16" rx="2"/>
+                    <path d="M8 8h8"/>
+                    <path d="M8 12h8"/>
+                    <path d="M8 16h5"/>
+                </svg>
+
+                Inventario
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+    <!-- CONTENIDO -->
+    <main class="contenido">
+
+        <header>
+
+            <h2>
+                Sistema de Gestión de Biblioteca Escolar
+            </h2>
+
+            <div class="usuario">
+                Usuario
+            </div>
+
+        </header>
+
+
+        <section class="pagina">
+
+            <h1>Gestión de alumnos</h1>
+
+            <p class="subtitulo">
+                Registra y consulta a los alumnos que utilizan
+                el servicio de biblioteca.
+            </p>
+
+
+            <!-- FORMULARIO -->
+            <div class="formulario">
+
+
+                <!-- MATRÍCULA -->
+                <div class="campo">
+
+                    <label for="matriculaAlumno">
+                        Matrícula
+                    </label>
+
+                    <input
+                        type="text"
+                        id="matriculaAlumno"
+                        placeholder="Ej. 2025001">
+
+                </div>
+
+
+                <!-- NOMBRE -->
+                <div class="campo">
+
+                    <label for="nombreAlumno">
+                        Nombre completo
+                    </label>
+
+                    <input
+                        type="text"
+                        id="nombreAlumno"
+                        placeholder="Ej. Ana López">
+
+                </div>
+
+
+                <!-- CARRERA -->
+                <div class="campo">
+
+                    <label for="carreraAlumno">
+                        Carrera
+                    </label>
+
+                    <select id="carreraAlumno">
+
+                        <option value="">
+                            Selecciona una carrera
+                        </option>
+
+                        <option>
+                            Tecnologías de la Información
+                        </option>
+
+                        <option>
+                            Desarrollo de Software
+                        </option>
+
+                        <option>
+                            Mecatrónica
+                        </option>
+
+                        <option>
+                            Administración
+                        </option>
+
+                        <option>
+                            Otra
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- CUATRIMESTRE -->
+                <div class="campo">
+
+                    <label for="semestreAlumno">
+                        Cuatrimestre
+                    </label>
+
+                    <select id="semestreAlumno">
+
+                        <option value="">
+                            Selecciona un cuatrimestre
+                        </option>
+
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- BOTONES -->
+                <div class="botones-formulario">
+
+                    <button
+                        type="button"
+                        class="btn-principal"
+                        id="guardarAlumno">
+
+                        Guardar alumno
+
+                    </button>
+
+
+                    <button
+                        type="reset"
+                        class="btn-secundario">
+
+                        Cancelar
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- ALUMNOS REGISTRADOS -->
+            <div class="seccion-tabla">
+
+                <div class="encabezado-tabla">
+
+                    <h2>Alumnos registrados</h2>
+
+                    <input
+                        type="text"
+                        id="buscarAlumno"
+                        class="buscador"
+                        placeholder="Buscar alumno...">
+
+                </div>
+
+
+                <div class="tabla-contenedor">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+                                <th>Matrícula</th>
+                                <th>Nombre</th>
+                                <th>Carrera</th>
+                                <th>Cuatrimestre</th>
+                                <th>Acciones</th>
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody id="tablaAlumnos">
+
+                            <!-- Aquí aparecerán los alumnos registrados -->
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

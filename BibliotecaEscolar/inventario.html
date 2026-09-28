@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Inventario - Biblioteca Escolar</title>
+
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <!-- MENÚ LATERAL -->
+    <aside class="menu">
+
+        <div class="logo">
+
+            <svg class="logo-icono" viewBox="0 0 24 24">
+                <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H11v16H6.5A2.5 2.5 0 0 0 4 21.5V5.5Z"/>
+                <path d="M20 5.5A2.5 2.5 0 0 0 17.5 3H13v16h4.5a2.5 2.5 0 0 1 2.5 2.5V5.5Z"/>
+            </svg>
+
+            <h2>Biblioteca<br>Escolar</h2>
+
+        </div>
+
+
+        <!-- NAVEGACIÓN -->
+        <nav>
+
+            <a href="index.html">
+
+                <svg viewBox="0 0 24 24">
+                    <path d="M3 11.5 12 4l9 7.5"/>
+                    <path d="M5 10.5V20h5v-6h4v6h5v-9.5"/>
+                </svg>
+
+                Inicio
+            </a>
+
+
+            <a href="libros.html">
+
+                <svg viewBox="0 0 24 24">
+                    <path d="M4 5a2 2 0 0 1 2-2h5v17H6a2 2 0 0 0-2 2V5Z"/>
+                    <path d="M20 5a2 2 0 0 0-2-2h-5v17h5a2 2 0 0 1 2 2V5Z"/>
+                </svg>
+
+                Libros
+            </a>
+
+
+            <a href="prestamos.html">
+
+                <svg viewBox="0 0 24 24">
+                    <path d="M4 6h11"/>
+                    <path d="M4 10h11"/>
+                    <path d="M4 14h7"/>
+                    <path d="M16 13v7"/>
+                    <path d="m13 17 3 3 3-3"/>
+                </svg>
+
+                Préstamos
+            </a>
+
+
+            <a href="devoluciones.html">
+
+                <svg viewBox="0 0 24 24">
+                    <path d="M9 7 4 12l5 5"/>
+                    <path d="M4 12h10a6 6 0 0 1 6 6"/>
+                </svg>
+
+                Devoluciones
+            </a>
+
+
+            <a href="alumnos.html">
+
+                <svg viewBox="0 0 24 24">
+                    <circle cx="12" cy="8" r="4"/>
+                    <path d="M4 21c0-4 3.5-7 8-7s8 3 8 7"/>
+                </svg>
+
+                Alumnos
+            </a>
+
+
+            <a href="inventario.html" class="activo">
+
+                <svg viewBox="0 0 24 24">
+                    <rect x="4" y="4" width="16" height="16" rx="2"/>
+                    <path d="M8 8h8"/>
+                    <path d="M8 12h8"/>
+                    <path d="M8 16h5"/>
+                </svg>
+
+                Inventario
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+    <!-- CONTENIDO -->
+    <main class="contenido">
+
+
+        <!-- ENCABEZADO -->
+        <header>
+
+            <h2>
+                Sistema de Gestión de Biblioteca Escolar
+            </h2>
+
+            <div class="usuario">
+                Usuario
+            </div>
+
+        </header>
+
+
+        <!-- PÁGINA DE INVENTARIO -->
+        <section class="pagina">
+
+
+            <!-- TÍTULO -->
+            <div class="titulo-inventario">
+
+                <div>
+
+                    <h1>Inventario de libros</h1>
+
+                    <p class="subtitulo">
+                        Consulta los libros disponibles en la biblioteca.
+                    </p>
+
+                </div>
+
+
+                <a href="libros.html" class="btn-agregar">
+                    + Agregar libro
+                </a>
+
+            </div>
+
+
+            <!-- RESUMEN DEL INVENTARIO -->
+            <div class="resumen-inventario">
+
+
+                <!-- TOTAL DE LIBROS -->
+                <div class="resumen-card">
+
+                    <svg class="icono-inventario" viewBox="0 0 24 24">
+
+                        <rect
+                            x="3"
+                            y="5"
+                            width="4"
+                            height="15"
+                            rx="1">
+                        </rect>
+
+                        <rect
+                            x="8"
+                            y="3"
+                            width="5"
+                            height="17"
+                            rx="1">
+                        </rect>
+
+                        <path d="M15 5l4-1 2 15-4 1z"/>
+
+                    </svg>
+
+
+                    <div>
+
+                        <p>Total de libros</p>
+
+                        <h2 id="totalLibros">
+                            0
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <!-- DISPONIBLES -->
+                <div class="resumen-card">
+
+                    <svg class="icono-inventario" viewBox="0 0 24 24">
+
+                        <path d="M4 5h6a2 2 0 0 1 2 2v13a2 2 0 0 0-2-2H4z"/>
+
+                        <path d="M20 5h-6a2 2 0 0 0-2 2v13a2 2 0 0 1 2-2h6z"/>
+
+                        <path d="m15 11 2 2 4-5"/>
+
+                    </svg>
+
+
+                    <div>
+
+                        <p>Disponibles</p>
+
+                        <h2 id="librosDisponibles">
+                            0
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRESTADOS -->
+                <div class="resumen-card">
+
+                    <svg class="icono-inventario" viewBox="0 0 24 24">
+
+                        <rect
+                            x="3"
+                            y="5"
+                            width="10"
+                            height="14"
+                            rx="2">
+                        </rect>
+
+                        <path d="M7 9h3"/>
+
+                        <path d="M15 12h6"/>
+
+                        <path d="m18 9 3 3-3 3"/>
+
+                    </svg>
+
+
+                    <div>
+
+                        <p>Prestados</p>
+
+                        <h2 id="librosPrestados">
+                            0
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <!-- MANTENIMIENTO -->
+                <div class="resumen-card">
+
+                    <svg class="icono-inventario" viewBox="0 0 24 24">
+
+                        <path d="M4 4h9a2 2 0 0 1 2 2v14H6a2 2 0 0 0-2 2z"/>
+
+                        <path d="M18 7a3 3 0 0 0 1 4l-5 5 2 2 5-5a3 3 0 0 0 1-4l-2 2-2-2 2-2"/>
+
+                    </svg>
+
+
+                    <div>
+
+                        <p>En mantenimiento</p>
+
+                        <h2 id="librosMantenimiento">
+                            0
+                        </h2>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- FILTROS -->
+            <div class="filtros-inventario">
+
+
+                <!-- BUSCAR -->
+                <div class="campo-busqueda">
+
+                    <label for="buscarInventario">
+                        Buscar
+                    </label>
+
+                    <input
+                        type="text"
+                        id="buscarInventario"
+                        placeholder="Título, autor o ID...">
+
+                </div>
+
+
+                <!-- CONDICIÓN -->
+                <div class="campo-busqueda">
+
+                    <label for="filtroCondicion">
+                        Condición
+                    </label>
+
+                    <select id="filtroCondicion">
+
+                        <option>Todos</option>
+                        <option>Buena</option>
+                        <option>Regular</option>
+                        <option>Mala</option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- ESTADO -->
+                <div class="campo-busqueda">
+
+                    <label for="filtroEstado">
+                        Estado
+                    </label>
+
+                    <select id="filtroEstado">
+
+                        <option>Todos</option>
+                        <option>Disponible</option>
+                        <option>Prestado</option>
+                        <option>En mantenimiento</option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <!-- TABLA DEL INVENTARIO -->
+            <div class="seccion-tabla inventario-tabla">
+
+                <div class="tabla-contenedor">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+
+                                <th>ID</th>
+                                <th>Título</th>
+                                <th>Autor</th>
+                                <th>Editorial</th>
+                                <th>Edición</th>
+                                <th>Condición</th>
+                                <th>Estado</th>
+                                <th>Acciones</th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody id="tablaInventario">
+
+                            <!-- Aquí aparecerán los libros registrados -->
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

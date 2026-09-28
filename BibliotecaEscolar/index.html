@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Escolar</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <aside class="menu">
+
+        <div class="logo">
+
+            <!-- Icono de libro -->
+            <svg class="logo-icono" viewBox="0 0 24 24">
+                <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H11v16H6.5A2.5 2.5 0 0 0 4 21.5V5.5Z"/>
+                <path d="M20 5.5A2.5 2.5 0 0 0 17.5 3H13v16h4.5a2.5 2.5 0 0 1 2.5 2.5V5.5Z"/>
+            </svg>
+
+            <h2>Biblioteca<br>Escolar</h2>
+
+        </div>
+
+
+        <nav>
+
+            <a href="index.html" class="activo">
+
+                <svg viewBox="0 0 24 24">
+                    <path d="M3 11.5 12 4l9 7.5"/>
+                    <path d="M5 10.5V20h5v-6h4v6h5v-9.5"/>
+                </svg>
+
+                Inicio
+            </a>
+
+
+            <a href="libros.html">
+
+                <svg viewBox="0 0 24 24">
+                    <path d="M4 5a2 2 0 0 1 2-2h5v17H6a2 2 0 0 0-2 2V5Z"/>
+                    <path d="M20 5a2 2 0 0 0-2-2h-5v17h5a2 2 0 0 1 2 2V5Z"/>
+                </svg>
+
+                Libros
+            </a>
+
+
+            <a href="prestamos.html">
+
+                <svg viewBox="0 0 24 24">
+                    <path d="M4 6h11"/>
+                    <path d="M4 10h11"/>
+                    <path d="M4 14h7"/>
+                    <path d="M16 13v7"/>
+                    <path d="m13 17 3 3 3-3"/>
+                </svg>
+
+                Préstamos
+            </a>
+
+
+            <a href="devoluciones.html">
+
+                <svg viewBox="0 0 24 24">
+                    <path d="M9 7 4 12l5 5"/>
+                    <path d="M4 12h10a6 6 0 0 1 6 6"/>
+                </svg>
+
+                Devoluciones
+            </a>
+
+
+            <a href="alumnos.html">
+
+                <svg viewBox="0 0 24 24">
+                    <circle cx="12" cy="8" r="4"/>
+                    <path d="M4 21c0-4 3.5-7 8-7s8 3 8 7"/>
+                </svg>
+
+                Alumnos
+            </a>
+
+
+            <a href="inventario.html">
+
+                <svg viewBox="0 0 24 24">
+                    <rect x="4" y="4" width="16" height="16" rx="2"/>
+                    <path d="M8 8h8"/>
+                    <path d="M8 12h8"/>
+                    <path d="M8 16h5"/>
+                </svg>
+
+                Inventario
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+    <main class="contenido">
+
+        <header>
+
+            <h2>Sistema de Gestión de Biblioteca Escolar</h2>
+
+            <div class="usuario">
+                Usuario
+            </div>
+
+        </header>
+
+
+        <section class="inicio">
+
+            <div class="bienvenida">
+
+                <h1>¡Bienvenido!</h1>
+
+                <h3>
+                    Sistema de Gestión de Biblioteca Escolar
+                </h3>
+
+                <p>
+                    Selecciona una opción del menú para comenzar.
+                </p>
+
+            </div>
+
+
+            <div class="opciones">
+
+
+                <!-- REGISTRAR LIBROS -->
+
+                <a href="libros.html" class="tarjeta">
+
+                    <svg class="icono-tarjeta" viewBox="0 0 24 24">
+                        <path d="M4 5a2 2 0 0 1 2-2h5v17H6a2 2 0 0 0-2 2V5Z"/>
+                        <path d="M20 5a2 2 0 0 0-2-2h-5v17h5a2 2 0 0 1 2 2V5Z"/>
+                    </svg>
+
+                    <h3>Registrar libros</h3>
+
+                    <p>
+                        Agregar nuevos ejemplares al sistema
+                    </p>
+
+                </a>
+
+
+                <!-- PRÉSTAMOS -->
+
+                <a href="prestamos.html" class="tarjeta">
+
+                    <svg class="icono-tarjeta" viewBox="0 0 24 24">
+                        <path d="M4 6h11"/>
+                        <path d="M4 10h11"/>
+                        <path d="M4 14h7"/>
+                        <path d="M16 13v7"/>
+                        <path d="m13 17 3 3 3-3"/>
+                    </svg>
+
+                    <h3>Realizar préstamo</h3>
+
+                    <p>
+                        Asignar libros a los alumnos
+                    </p>
+
+                </a>
+
+
+                <!-- DEVOLUCIONES -->
+
+                <a href="devoluciones.html" class="tarjeta">
+
+                    <svg class="icono-tarjeta" viewBox="0 0 24 24">
+                        <path d="M9 7 4 12l5 5"/>
+                        <path d="M4 12h10a6 6 0 0 1 6 6"/>
+                    </svg>
+
+                    <h3>Registrar devolución</h3>
+
+                    <p>
+                        Registrar el regreso de los libros
+                    </p>
+
+                </a>
+
+
+                <!-- ALUMNOS -->
+
+                <a href="alumnos.html" class="tarjeta">
+
+                    <svg class="icono-tarjeta" viewBox="0 0 24 24">
+                        <circle cx="12" cy="8" r="4"/>
+                        <path d="M4 21c0-4 3.5-7 8-7s8 3 8 7"/>
+                    </svg>
+
+                    <h3>Gestionar alumnos</h3>
+
+                    <p>
+                        Consultar y registrar alumnos
+                    </p>
+
+                </a>
+
+
+                <!-- INVENTARIO -->
+
+                <a href="inventario.html" class="tarjeta">
+
+                    <svg class="icono-tarjeta" viewBox="0 0 24 24">
+                        <rect x="4" y="4" width="16" height="16" rx="2"/>
+                        <path d="M8 8h8"/>
+                        <path d="M8 12h8"/>
+                        <path d="M8 16h5"/>
+                    </svg>
+
+                    <h3>Ver inventario</h3>
+
+                    <p>
+                        Consultar disponibilidad de libros
+                    </p>
+
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
